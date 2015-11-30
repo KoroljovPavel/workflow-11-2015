@@ -6,3 +6,7 @@
 	font-family: OpenSans-Semibold;
 	src: url(../fonts/OpenSans-Semibold.ttf);
 }
+@font-face{
+	font-family: OpenSans-Light;
+	src: url(../fonts/OpenSans-Light.ttf);
+}
