@@ -1,0 +1,125 @@
+.auth-form{
+	width: 400px;
+	margin: 15px auto 20px auto;
+}
+.auth-label-input,
+.content-label-input,
+.input-captcha{
+	font-family: OpenSans-Light;
+	font-size: 12px;
+	color: #c7c6c6;
+	margin-bottom: 18px;
+	box-sizing: border-box;
+	padding: 10px 0 10px 9px;
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: rgb(214, 213, 211);
+ 	border-radius: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(233,231,231,.45) 0%, rgba(251,249,249,0) 100%);
+    background-image: -o-linear-gradient(left, rgba(233,231,231,.45) 0%, rgba(251,249,249,0) 100%);
+    background-image: linear-gradient(to right, rgba(233,231,231,.45) 0%, rgba(251,249,249,0) 100%);
+ 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+ 	outline: none;
+}
+.auth-label{
+	display: inline-block;
+	margin-left: 20px;
+	width: 47%;
+}
+.auth-label:first-child{
+	margin-left: 0;
+}
+.auth-form-head{
+	font-family: OpenSans;
+	font-size: 14px;
+	color: #727070;
+	margin-bottom: 7px;
+}
+.auth-label-input{
+	width: 188px;
+}
+.content-cell-label{
+	display: inline-block;
+	width: 100%;
+}
+.content-label-input{
+	width: 100%;
+	height: 180px;
+}
+.captcha{
+	display: inline-block;
+}
+.input-captcha{
+	vertical-align: top;
+    margin-bottom: 0;
+    margin-top: 20px;
+    width: 188px;
+    margin-left: 13px;
+    padding: 6px 9px;
+}
+.auth-form-buttons{
+	margin-top: 30px;
+}
+.auth-form-left{
+	float: left;
+	margin-left: 30px;
+}
+.auth-form-right{
+	float: right;
+	margin-right: 30px;
+}
+.btn{
+	border: none;
+	font-size: 14px;
+	font-family: "OpenSans";
+	width: 121px;
+  	height: 37px;
+  	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	border-radius: 5px;
+	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+.btn-send{
+	background: rgb(128,232,203); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(rgba(128,232,203,1) 0%, rgba(67,183,150,1) 100%);
+	background: -o-linear-gradient(rgba(128,232,203,1) 0%, rgba(67,183,150,1) 100%);
+	background: linear-gradient(rgba(128,232,203,1) 0%, rgba(67,183,150,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e8cb', endColorstr='#43b796',GradientType=0 ); /* IE6-9 */
+	color: #1e7465;
+	
+}
+.btn-send:hover{
+	background: rgb(95,220,189); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(95,220,189,1) 0%, rgba(58,160,135,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(95,220,189,1) 0%,rgba(58,160,135,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(95,220,189,1) 0%,rgba(58,160,135,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fdcbd', endColorstr='#3aa087',GradientType=0 ); /* IE6-9 */
+}
+.btn-reset{
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(233,230,228,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(233,230,228,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(233,230,228,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9e6e4',GradientType=0 ); /* IE6-9 */
+	color: #727070;
+}
+.btn-reset:hover{
+	background: rgb(232,231,231); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(232,231,231,1) 0%, rgba(194,192,192,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(232,231,231,1) 0%,rgba(194,192,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(232,231,231,1) 0%,rgba(194,192,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#c2c0c0',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.btn-send:focus,
+.btn-reset:focus{
+	outline: none;
+}
+
+
+
+
+
+
+

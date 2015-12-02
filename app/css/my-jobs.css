@@ -3,6 +3,7 @@
 }
 .jobs-list-item{
 	display: inline-block;
+	vertical-align: top;
 	width: 163px;
 	border: 1px solid #c7c7c7;
 	border-radius: 5px;
@@ -21,8 +22,19 @@
 	width: 163px;
 	height: 120px;
 	display: table;
-	background-image: url(../img/google.png);
 	background-size: cover;
+}
+.img-bg-google{
+	background-image: url(../img/google.png);
+}
+.img-bg-codepen{
+	background-image: url(../img/codepen.png);
+}
+.img-bg-yeoman{
+	background-image: url(../img/yeoman.png);
+}
+.img-bg-youtube{
+	background-image: url(../img/YouTube.png);
 }
 .jobs-site-link{
 	display: none;
@@ -59,6 +71,7 @@
 }
 .last{
 	height: 133px;
+	vertical-align: middle;
 }
 .add{
 	display: block;
