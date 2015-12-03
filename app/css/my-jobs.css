@@ -15,6 +15,9 @@
 .jobs-list-item:nth-child(3n){
 	margin-right: 0;
 }
+.no-csstransitions .jobs-list-item{
+	margin-right: 21px;
+}
 .jobs-list-item-article{
 	background: #fff;
 }
