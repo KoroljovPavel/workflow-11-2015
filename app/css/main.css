@@ -29,6 +29,8 @@ a{
 	background: url(../img/header-bg.png);
 	height: 90px;
 	border-bottom: 7px solid #fff;
+	margin-bottom: 35px;
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .header-cont{
 	position: relative;
@@ -51,10 +53,14 @@ a{
 }
 .borderradius .social li{
 	display: inline-block;
+	margin-left: 10px;
+}
+.borderradius .social-link{
 	border-radius: 50%;
+	display: block;
+	position: relative;
 	width: 37px;
 	height: 37px;
-	margin-left: 10px;
 	background: #e9e6e4; /* Old browsers */
 	background: -webkit-linear-gradient(left, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
 	background: -o-linear-gradient(left, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
@@ -89,56 +95,57 @@ a{
 .social li:first-child{
 	margin-left: 0;
 }
-.social a{
+
+.social-link i{
 	background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
-    margin: 10px auto;
+    position: absolute;
 }
-.social .fb{
+.social-link .fb{
 	width: 11px;
     height: 22px;
-    margin-top: 8px;
-    margin-left: 13px;
+    top: 8px;
+    left: 13px;
     background-position: -125px -47px;
 }
-.social .fb:hover{
+.social-link:hover .fb{
 	width: 11px;
     height: 22px;
     background-position: -5px -79px;
 }
-.social .vk{
+.social-link .vk{
 	width: 16px;
     height: 19px;
-    margin-left: 12px;
-    margin-top: 9px;
+    top: 9px;
+    left: 12px;
     background-position: -177px -37px;
 }
-.social .vk:hover{
+.social-link:hover .vk{
 	width: 16px;
     height: 19px;
     background-position: -188px -66px;
 }
-.social .tw{
-	width: 25px;
+.social-link .tw{
+    width: 25px;
     height: 18px;
-    margin-left: 7px;
-    margin-top: 10px;
+    top: 9px;
+    left: 7px;
     background-position: -142px -111px;
 }
-.social .tw:hover{
+.social-link:hover .tw{
 	width: 25px;
     height: 18px;
     background-position: -142px -139px;
 }
-.social .gh{
+.social-link .gh{
 	width: 30px;
+    top: 8px;
+    left: 5px;
     height: 23px;
-    margin-left: 5px;
-    margin-top: 8px;
-    background-position: -52px -79px;
+    background-position: -52px -79px
 }
-.social .gh:hover{
+.social-link:hover .gh{
 	width: 30px;
     height: 23px;
     background-position: -92px -79px;
@@ -155,7 +162,6 @@ a{
 	float: right;
 }
 .info-about{
-	margin-top: 35px;
 	margin-bottom: 35px;
 	background: #f7f6f5;
 	font-family: OpenSans-Semibold;
@@ -164,7 +170,7 @@ a{
 	border-radius: 5px;
 }
 .about-me-head{
-	padding: 1px 0 1px 43px;
+	padding-left: 43px;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9a8a8+0,7b7878+100 */
 	background: rgb(169,168,168); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(169,168,168,1) 0%, rgba(123,120,120,1) 100%); /* FF3.6-15 */
@@ -176,10 +182,11 @@ a{
     border-top-left-radius: 4px;
 }
 .about-me-header{
+	margin: 12px 0;
 	font-size: 24px;
 	color: #eeedec;
 	text-shadow: 0 1px 0 #666565;
-	line-height: .5;
+	line-height: 1.2;
 }
 
 .profile-img{
@@ -190,8 +197,7 @@ a{
 }
 .profile-img-border{
 	float: left;
-	margin-top: 39px;
-	margin-left: 43px;
+	margin: 39px 0 20px 43px;
 	width: 145px;
 	height: 145px;
 	border-radius: 50%;
@@ -205,10 +211,12 @@ a{
 	float: right;
 	width: 420px;
 	margin-top: 30px;
+	margin-bottom: 20px;
 }
 .profile-info-i{
 	margin-left: 10px;
 	max-width: 270px;
+	font-family: OpenSans;
 }
 .profile-info-t{
 	margin-bottom: 8px;
@@ -303,7 +311,7 @@ a{
 	height: 50px;
     background: #f7f7f7;
     border-radius: 50%;
-    box-shadow: -1px -1px 1px #c7c7c7;
+    box-shadow: -1px -1px 1px #c7c7c7, 1px 1px 1px #fff;
 }
 .briefcase{
 	position: absolute;
@@ -359,7 +367,6 @@ a{
 .sidebar{
 	width: 250px;
 	float: left;
-	margin-top: 35px;
 }
 .link{
 	margin-top: -1px;
@@ -373,6 +380,9 @@ a{
     background: -o-linear-gradient(left, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
     background: linear-gradient(to right, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e6e5', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.no-bdr{
+	border-radius: 0;
 }
 .link-my{
 	font-family: OpenSans-Semibold;
@@ -445,6 +455,9 @@ a{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbf9f9', endColorstr='#e0c591',GradientType=0 ); /* IE6-9 */
 	text-decoration: underline;
 }
+.bdr{
+	border-radius: 4px;
+}
 .info-text{
 	display: block;
 	margin-left: 70px;
@@ -514,9 +527,9 @@ a{
 }
 .enter{
 	display: block;
-	font-family: OpenSans-Semibold;
+	font-family: OpenSans-Bold;
 	font-size: 14px;
-	color: #323232;
+	color: #9c9c9c;
 	text-transform: uppercase;
 	line-height: 22px;
 }
@@ -529,9 +542,7 @@ a{
     margin-right: 15px;
     background-position: -132px -79px;
 }
-.enter:hover{
-	text-decoration: underline;
-}
+
 .enter:hover:before{
 	background-image: url(../img/spritesheet.png);
 	content: "";
