@@ -10,7 +10,7 @@
 	color: #c7c6c6;
 	margin-bottom: 18px;
 	box-sizing: border-box;
-	padding: 10px 0 10px 9px;
+	padding: 10px;
 	border-style: solid;
   	border-width: 1px;
   	border-color: rgb(214, 213, 211);
@@ -21,15 +21,17 @@
 	background: linear-gradient(to bottom,  rgba(251,249,249,1) 0%,rgba(233,231,231,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbf9f9', endColorstr='#e9e7e7',GradientType=0 ); /* IE6-9 */
  	outline: none;
+ 	resize: none;
 }
+
 .auth-label{
-	display: inline-block;
+	float: left;
+	margin-bottom: 18px;
 	margin-left: 20px;
-	width: 47%;
 }
-.no-csstransitions .auth-label{
+/*.no-csstransitions .auth-label{
 	width: 46%;
-}
+}*/
 .auth-label:first-child{
 	margin-left: 0;
 }
@@ -40,26 +42,32 @@
 	margin-bottom: 7px;
 }
 .auth-label-input{
-	width: 188px;
+	width: 190px;
 }
 .content-cell-label{
-	display: inline-block;
-	width: 100%;
+	margin-left: 0;
+}
+.content-cell-label .tooltip{
+	right: 102.5% !important;
 }
 .content-label-input{
-	width: 100%;
+	width: 400px;
 	height: 180px;
 }
 .captcha{
-	display: inline-block;
+	margin-left: 0;
+}
+.img-captcha{
+	float: left;
 }
 .input-captcha{
-	vertical-align: top;
-    margin-bottom: 0;
-    margin-top: 20px;
     width: 188px;
-    margin-left: 13px;
     padding: 6px 9px;
+}
+.captcha-input{
+	float: right;
+	margin-top: 20px;
+	margin-left: 17px;
 }
 .no-csstransitions .input-captcha{
 	margin-left: 10px;

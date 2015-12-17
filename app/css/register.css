@@ -1,0 +1,104 @@
+.register{
+	position: absolute;
+	top: 30%;
+	left: 38%;
+	width: 330px;
+}
+.autorisation-header{
+	font-family: OpenSans-Light;
+	font-size: 12px;
+	color: #727070;
+	margin: 0;
+}
+.auth-form-reg{
+	padding: 38px;
+	background: #f7f6f5;
+}
+.enter-autorisation{
+	position: relative;
+	display: block;
+	margin-bottom: 24px;
+}
+.enter-info{
+	width: 252px;
+	font-family: OpenSans-Light;
+	font-size: 12px;
+	line-height: 18px;
+	color: #c7c6c6;
+	padding: 10px 0;
+	background: transparent;
+	outline: none;
+	border: 1px solid #c7c6c6;
+	border-radius: 4px;
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+.enter-info[placeholder]{
+	text-align: center;
+}
+.enter-autorisation:before {
+    content: "";
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    position: absolute;
+    width: 10px;
+    top: -1px;
+    background-position: -48px -37px;
+    left: 45px;
+    height: 40px;
+}
+.enter-email:after {
+    content: "";
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    position: absolute;
+    width: 20px;
+    top: 11px;
+    background-position: -92px -46px;
+    left: 14px;
+    height: 15px;
+}
+.enter-pas:after{
+    content: "";
+    display: block;
+    background-image: url(../img/spritesheet.png);
+    position: absolute;
+    width: 18px;
+    top: 9px;
+    background-position: -80px -111px;
+    left: 16px;
+    height: 19px;
+}
+.hidden-checkbox{
+	display: none;
+}
+
+
+.hidden-checkbox + .check {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: OpenSans;
+    color: #727070;
+}
+.hidden-checkbox + .check:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 0;
+	border-radius: 3px;
+	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	box-shadow: 0px 1px 0px 0px rgba(167, 166, 166, 0.15),inset 0px 1px 0px 0px rgba(114, 112, 112, 0.33);
+}
+.hidden-checkbox:checked + .check:before{
+	background-image: url(../img/spritesheet.png);
+	background-position: -65px -55px;
+	top: 0;
+	right: 0;
+}
+.btn-reg{
+	margin: 15px 0 0 60px;
+}
+
+
