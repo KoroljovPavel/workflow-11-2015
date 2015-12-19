@@ -10,8 +10,8 @@ if(isset($_SESSION['name'])){
 	
 	move_uploaded_file($_FILES['image']['tmp_name'], $uploadDirectory.$_FILES['image']['name']);
 
-	mysql_connect("localhost:3306", "pavko132_admindb", "zxchvqwp150688") or die (mysql_error ());
-	mysql_select_db("pavko132_workloft") or die(mysql_error());
+	mysql_connect(""хост", "логин", "пароль"") or die (mysql_error ());
+	mysql_select_db("база даных") or die(mysql_error());
 	mysql_set_charset( 'utf8' );
 	$strSQL = "INSERT INTO projects(projectTitle, projectImage, projectUrl, projectDescr) VALUES('{$title}', '{$image}', '{$url}', '{$mesDescription}')"; 
 	mysql_query($strSQL) or die (mysql_error());

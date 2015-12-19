@@ -11,8 +11,8 @@
 	$mail->IsSMTP();
 	$mail->Host = 'smtp.mail.ru';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'workloftdemo@mail.ru';
-	$mail->Password = "zxchvqwp150688";
+	$mail->Username = 'имя пользователя';
+	$mail->Password = "пароль";
 	$mail->SMTPSecure = 'ssl';
 	$mail->Port = 465;
 	$mail->CharSet = 'UTF-8';
