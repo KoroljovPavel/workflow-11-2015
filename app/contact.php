@@ -22,7 +22,7 @@
 					</header>
 					<div class="job">
 						<div class="auth-form">
-							<form action="server/contact-me.php" mehod="post" autocomplete="off" class="client-validated">
+							<form action="server/send_mail.php" mehod="post" autocomplete="off" class="client-validated">
 								<div class="auth-form-inner">
 									<label class="auth-label">
 										<div class="auth-form-head">Имя</div>
@@ -103,7 +103,7 @@
 	<?php include('tpl/footer.php');?>
 	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
-	<script src="js/contact.js"></script>
 	<script src="js/validate.js"></script>
 	<script src="js/contact-me.js"></script>
+	<script src="js/placeholder.js"></script>
 </body>	

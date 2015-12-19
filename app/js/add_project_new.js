@@ -6,8 +6,7 @@ var addProject = (function() {
 
 	var _setupListeners = function() {
 		$(".add").on("click", _showForm);
-		$(".fog, .close-popup-form").on("click", _hideForm);
-		$(".close-popup-ok").on("click", function(){$(".server-message-ok").fadeOut('slow')});
+		$(".fog, .close-popup-form, .close-popup-ok").on("click", _hideForm);
 		$(".close-popup-er").on("click", function(){$(".server-message-er").fadeOut('slow')});
 		$(".input-popup-img").on("change", _showText);
 		$(".popup-form").on("submit", _submitForm);
@@ -50,34 +49,36 @@ var addProject = (function() {
 	var _submitForm = function(e){
 		e.preventDefault();
 		console.log("отправка формы");
-		var form  = $(this),
-			url = form.attr("action"),
-			defObj = _ajaxForm(form, url);
+		var form  = $(this);
+			
+		_ajaxSend(form);
 	}
-
-
-
-		var _ajaxForm = function(form, url){	
-
-			var url   = form.attr("action");
-			var	data  = new FormData($(form)[0]);
-			if (!validate.checkForm(form)) console.log('ошибка');
-			$.ajax({
-				url: url,
-				type: 'POST',
-				processData: false,
-				contentType: false,
-				dataType: 'json',
-				data: data
-			})
-			.done(function() {
+		
+	var _ajaxSend = function(form) {
+		var	data  = new FormData($(form)[0]),
+			url = form.attr("action");
+		if (!validate.checkForm(form)) return false;
+		console.log("Отправка с проверкой");
+		$.ajax({
+			url: url,
+			type: 'POST',
+			processData: false,
+			contentType: false,
+			dataType: 'json',
+			data: data
+		})
+		.done(function() {
+			if (data = "true"){
 				form.find('.server-message-ok').show('slow');
-			})
-			.fail(function() {
+			}else{
 				form.find('.server-message-er').show('slow');
-			});
-
-	};
+			}
+		})
+		.fail(function() {
+			form.find('.server-message-er').show('slow');
+		});
+	}
+	
 
 
 

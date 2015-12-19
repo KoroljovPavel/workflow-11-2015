@@ -28,7 +28,8 @@ session_start();
 							<ul class="jobs-list">
 								<li class="jobs-list-item">
 									<article class="jobs-list-item-article">
-										<div class="img-bg img-bg-google">
+										<div class="img-bg">
+											<img src="img/google.png" alt="google" class="image-project">
 											<a href="//google.com" target="_blank" class="jobs-site-link">google.com</a>
 										</div>
 										<a href="//google.com" target="_blank" class="jobs-list-link">google.com</a>
@@ -37,7 +38,8 @@ session_start();
 								</li>
 								<li class="jobs-list-item">
 									<article class="jobs-list-item-article">
-										<div class="img-bg img-bg-codepen">
+										<div class="img-bg">
+											<img src="img/codepen.png" alt="codepen" class="image-project">
 											<a href="//codepen.io" target="_blank" class="jobs-site-link">codepen.io</a>
 										</div>
 										<a href="//codepen.io" target="_blank" class="jobs-list-link">codepen.io</a>
@@ -46,7 +48,8 @@ session_start();
 								</li>
 								<li class="jobs-list-item">
 									<article class="jobs-list-item-article">
-										<div class="img-bg img-bg-yeoman">
+										<div class="img-bg">
+											<img src="img/yeoman.png" alt="yeoman" class="image-project">
 											<a href="//yeoman.io" target="_blank" class="jobs-site-link">yeoman.io</a>
 										</div>
 										<a href="//yeoman.io" target="_blank" class="jobs-list-link">yeoman.io</a>
@@ -56,6 +59,7 @@ session_start();
 								<li class="jobs-list-item">
 									<article class="jobs-list-item-article">
 										<div class="img-bg img-bg-youtube">
+											<img src="img/YouTube.png" alt="youtube" class="image-project">
 											<a href="//youtube.com" target="_blank" class="jobs-site-link">youtube.com</a>
 										</div>
 										<a href="//youtube.com" target="_blank" class="jobs-list-link">youtube.com</a>
@@ -163,8 +167,9 @@ session_start();
 		</section>
 		<div class="fog"></div>
 		<script src="bower/jquery/jquery.min.js"></script>
+		<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 		<script src="js/validate.js"></script>
 		<script src="js/add_project_new.js"></script>
-
+		<script src="js/placeholder.js"></script>
 	</div>
 </body>	

@@ -8,36 +8,30 @@ var reg = (function() {
 		$(".autorisation").on('submit', _submitForm);
 	};
 
-	var _submitForm = function(e){
-		e.preventDefault();
+	var _submitForm = function(form){
+		//e.preventDefault();
+
 		console.log("отправка формы");
 		var form  = $(this),
-			url = form.attr("action"),
-			defObj = _ajaxForm(form, url);
-	}
+			url = form.attr("action");
+		if (!validate.checkForm(form)) return false;
 
-	var _ajaxForm = function (form, url){
-		console.log("отправка с проверкой");
-		if (!validate.checkForm(form)) console.log('ошибка');
-		var data = form.serialize();
-		console.log(data);
-		$.ajax({
+		
+		var	data  = new FormData($(form)[0]);
+			console.log(data);	
+			$.ajax({
 			url: url,
 			type: 'POST',
 			dataType: 'json',
+			processData: false,
+			contentType: false,
 			data: data,
-		})
-		.done(function() {
-			console.log("success");
-		})
-		.fail(function() {
-			console.log("error");
-		})
-		.always(function() {
-			console.log("complete");
-		});
-		
-	}
+			});
+			
+			
+			
+	}	
+
 
 	return {
 		init : init
